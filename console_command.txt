@@ -1,0 +1,23 @@
+# Интерактивный режим
+python office_tweaks.py -i
+
+# Конвертация одного PDF
+python office_tweaks.py --pdf2docx "/Users/dinrazar/Desktop/pratique/Test/Нижний1.pdf"
+
+# Конвертация всех PDF в папке
+python office_tweaks.py --pdf2docx all --workdir "/Users/dinrazar/Desktop/pratique/Test"
+
+# Конвертация DOCX в PDF
+python office_tweaks.py --docx2pdf "/Users/dinrazar/Desktop/pratique/Test/ГИС Наумов.docx"
+
+# Сжатие изображения
+python office_tweaks.py --compress-images "/Users/dinrazar/Desktop/pratique/Test/Удалить3.JPG" --quality 50
+
+# Сжатие всех изображений в папке
+python office_tweaks.py --compress-images all --workdir "/Users/dinrazar/Desktop/pratique/Test" --quality 80
+
+# Удаление файлов по расширению
+python office_tweaks.py --delete --delete-mode extension --delete-pattern ".JPG" --delete-dir "/Users/dinrazar/Desktop/pratique/Test"
+
+# Исполняемый файл (после сборки)
+./Office_Tweaks --pdf2docx "/Users/dinrazar/Desktop/pratique/Test/Нижний1.pdf"
