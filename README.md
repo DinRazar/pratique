@@ -2,16 +2,16 @@
 1. Исследование структуры пакета
 а. Дополните схему дерева файлов и модулей пакета calculator, указав, какие модули и функции в них содержатся.
 
-calculator/
-├── __init__.py
-├── basic/
-│   ├── __init__.py
-│   ├── addition.py
-│   └── subtraction.py
-└── advanced/
-    ├── __init__.py
-    ├── exponentiation.py
-    └── root.py
+        calculator/
+        ├── __init__.py
+        ├── basic/
+        │   ├── __init__.py
+        │   ├── addition.py
+        │   └── subtraction.py
+        └── advanced/
+            ├── __init__.py
+            ├── exponentiation.py
+            └── root.py
 В пакете basic: addition.py функция add(a, b) - сложение двух чисел subtraction.py функция subtract(a, b) - вычитание двух чисел
 
 В пакете advanced: exponentiation.py функция power(a, b) - возведение в степень (a^b) root.py функция square_root(a) - квадратный корень числа
@@ -118,14 +118,14 @@ print(sys.path)
 а. Внутри calculator/advanced создайте подпакет trigonometry с функциями sin, cos и tan. Структура должна выглядеть так:
 
 
-[ ]
-calculator/
-└── advanced/
-    ├── trigonometry/
-    │   ├── __init__.py
-    │   ├── sine.py
-    │   ├── cosine.py
-    │   └── tangent.py
+        [ ]
+        calculator/
+        └── advanced/
+            ├── trigonometry/
+            │   ├── __init__.py
+            │   ├── sine.py
+            │   ├── cosine.py
+            │   └── tangent.py
 б. Реализуйте функции в соответствующих модулях, используя модуль math из стандартной библиотеки Python.
 
 в. Обновите __init__.py файлы, чтобы обеспечить корректный импорт функций.
